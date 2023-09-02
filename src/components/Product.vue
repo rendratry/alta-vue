@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h2>Produk Terlaris</h2>
     <vs-row>
       <vs-col :key="index" v-for="col,index in 3" vs-type="flex" vs-justify="center" vs-align="center" w="4">
         <vs-card>
@@ -13,6 +14,7 @@
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </p>
+            <h3>Rp 350.000</h3>
           </template>
           <template #interactions>
             <vs-button danger icon>
@@ -28,14 +30,24 @@
         </vs-card>
       </vs-col>
     </vs-row>
+    <br>
+    <vs-button
+        flat
+        :active="active == 1"
+        @click="active = 1"
+    >
+      Tampilkan Semua Produk
+    </vs-button>
   </div>
 </template>
-<script setup>
+<script>
+export default {
+  name: 'ProductFurniture',
+}
 </script>
 
 <style scoped>
 .container {
-  width: 90%;
   margin: 0 auto;
   padding: 20px;
   text-align: justify;
