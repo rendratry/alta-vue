@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import DefaultLayout from "@/layout/DefaultLayout.vue";
 import homeView from "@/views/HomeView.vue";
+import produkView from "@/views/ProdukView.vue";
+import checkout from "@/components/Checkout.vue";
 
 Vue.use(VueRouter)
 
@@ -14,6 +16,16 @@ const routes = [
         path: "",
         name: 'Home',
         component: homeView
+      },
+      {
+        path: "/produk",
+        name: 'Produk',
+        component: produkView
+      },
+      {
+        path: "/checkout",
+        name: 'Checkout',
+        component: checkout
       },
     ]
   },

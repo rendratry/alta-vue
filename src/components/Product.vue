@@ -2,7 +2,7 @@
   <div class="container">
     <h2>Produk Terlaris</h2>
     <vs-row>
-      <vs-col :key="index" v-for="col,index in 3" vs-type="flex" vs-justify="center" vs-align="center" w="4">
+      <vs-col :key="index" v-for="index in 3" vs-type="flex" vs-justify="center" vs-align="center" w="4">
         <vs-card>
           <template #title>
             <h3>Pot with a plant</h3>
