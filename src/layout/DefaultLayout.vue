@@ -4,31 +4,32 @@
       <template #left>
         <img src="../assets/logo.png" alt="" height="30" class="logo">
       </template>
-      <vs-navbar-item :active="active == 'home'" id="home">
+      <vs-navbar-item :active="active === 'home'" id="home" to="/">
         Home
       </vs-navbar-item>
-      <vs-navbar-item :active="active == 'produk'" id="produk">
+      <vs-navbar-item :active="active === 'produk'" id="produk" to="/produk">
         Produk
       </vs-navbar-item>
-      <vs-navbar-item :active="active == 'keranjang'" id="keranjang">
-        Keranjang
-      </vs-navbar-item>
       <template #right>
-        <vs-button flat class="nav-button">Login</vs-button>
-        <vs-button class="nav-button">Get Started</vs-button>
+        <vs-button class="nav-button" @click="showLoginDialog = true">Login</vs-button>
       </template>
     </vs-navbar>
     <div class="container">
+      <login-dialog v-if="showLoginDialog" @close="showLoginDialog = false"></login-dialog>
       <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script>
+import LoginDialog from "@/components/LoginDialog.vue";
+
 export default {
   name: 'DefaultLayout',
+  components: {LoginDialog},
   data: () => ({
-    active: 'guide'
+    active: 'home',
+    showLoginDialog: false,
   })
 }
 </script>
@@ -55,15 +56,4 @@ export default {
 </style>
 
 
-<!--<style scoped>-->
-<!--.container .center-nav {-->
-<!--  width: 90%;-->
-<!--  margin: 0 auto;-->
-<!--  padding: 20px;-->
-<!--  text-align: justify;-->
-<!--  align-content: center;-->
-<!--}-->
-
-
-<!--</style>-->
         

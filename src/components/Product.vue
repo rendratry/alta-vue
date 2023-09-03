@@ -2,19 +2,19 @@
   <div class="container">
     <h2>Produk Terlaris</h2>
     <vs-row>
-      <vs-col :key="index" v-for="index in 3" vs-type="flex" vs-justify="center" vs-align="center" w="4">
+      <vs-col v-for="product in listProducts" :key="product.id_product" vs-type="flex" vs-justify="center" vs-align="center" w="4">
         <vs-card>
           <template #title>
-            <h3>Pot with a plant</h3>
+            <h3>{{ product.name }}</h3>
           </template>
           <template #img>
-            <img src="https://images.unsplash.com/photo-1592078615290-033ee584e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2160&q=80" alt="">
+            <img :src="product.photo" alt="">
           </template>
           <template #text>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              {{ product.description }}
             </p>
-            <h3>Rp 350.000</h3>
+            <h3>Rp {{ product.price }}</h3>
           </template>
           <template #interactions>
             <vs-button danger icon>
@@ -43,6 +43,19 @@
 <script>
 export default {
   name: 'ProductFurniture',
+  created() {
+    this.doFetchProduct();
+  },
+  methods: {
+    async doFetchProduct(){
+      await this.listProducts;
+    }
+  },
+  computed: {
+    listProducts() {
+      return this.$store.dispatch('fetchProducts')
+    },
+  }
 }
 </script>
 
