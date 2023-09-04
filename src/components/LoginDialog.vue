@@ -48,7 +48,6 @@ export default {
   })
 }
 </script>
-
 <style lang="stylus">
 getColor(vsColor, alpha = 1)
 unquote("rgba(var(--vs-"+vsColor+"), "+alpha+")")

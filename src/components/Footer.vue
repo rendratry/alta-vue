@@ -6,8 +6,8 @@
     <vs-footer>
       <div class="footer-content">
         <div>
-          <h3>Company Name</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <img src="../assets/logorv-biru.png" alt="" height="30" class="logo">
+          <p>Jl Mangga No.30 Kota Madiun, Jawa Timur</p>
         </div>
         <div>
           <h3>Quick Links</h3>
@@ -20,8 +20,8 @@
         </div>
         <div>
           <h3>Contact Us</h3>
-          <p>Email: info@example.com</p>
-          <p>Phone: +123-456-7890</p>
+          <p>Email: info@rvfurniture.com</p>
+          <p>Phone: +62-8156-7890-3035</p>
         </div>
       </div>
     </vs-footer>

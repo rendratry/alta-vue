@@ -3,10 +3,10 @@
     <header>
       <div class="header-content">
         <div class="header-text">
-          <h1>Welcome to Our Landing Page</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1>Selamat Datang di rvfurniture</h1>
+          <p>Tempat untuk mencari furniture yang kekinian dan minimalist, untuk mendapatkan info produk terbaru bisa subscribe di bawah ini</p>
           <div class="input-button-container">
-            <vs-input v-model="value" placeholder="Evan You" />
+            <vs-input v-model="value" placeholder="Email" />
             <vs-button
                 :active="active == 0"
                 @click="active = 0"

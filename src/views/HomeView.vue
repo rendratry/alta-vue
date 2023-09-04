@@ -2,7 +2,18 @@
   <div class="home">
     <HeaderFurniture/>
     <br>
+    <h2>Produk Terlaris</h2>
     <ProductFurniture />
+    <vs-button
+        flat
+        :active="active == 1"
+        @click="active = 1"
+        to = "/produk"
+    >
+      Tampilkan Semua Produk
+    </vs-button>
+    <br>
+    <TestimoniView/>
     <br>
     <AppFooter/>
   </div>
@@ -13,10 +24,12 @@
 import ProductFurniture from "@/components/Product.vue";
 import HeaderFurniture from "@/components/Header.vue";
 import AppFooter from "@/components/Footer.vue";
+import TestimoniView from "@/components/Testimoni.vue";
 
 export default {
   name: 'HomeView',
   components: {
+    TestimoniView,
     AppFooter,
     HeaderFurniture,
     ProductFurniture,

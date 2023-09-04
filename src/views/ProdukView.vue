@@ -2,7 +2,7 @@
   <div class="container">
     <header>
       <h1>Pilih Produk</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Pilih produk yang kamu inginkan</p>
     </header>
     <div class="produk">
       <ProductFurniture/>
@@ -12,7 +12,6 @@
 <script>
 
 import ProductFurniture from "@/components/Product.vue";
-
 export default {
   name: 'ProductView',
   components: {ProductFurniture},

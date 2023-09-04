@@ -2,7 +2,7 @@
   <div class="center-nav">
     <vs-navbar not-line center-collapsed v-model="active" fixed class="custom-navbar">
       <template #left>
-        <img src="../assets/logo.png" alt="" height="30" class="logo">
+        <img src="../assets/logorv-biru.png" alt="" height="30" class="logo">
       </template>
       <vs-navbar-item :active="active === 'home'" id="home" to="/">
         Home
@@ -11,7 +11,7 @@
         Produk
       </vs-navbar-item>
       <template #right>
-        <vs-button class="nav-button" @click="showLoginDialog = true">Login</vs-button>
+        <vs-button class="nav-button" @click="showLoginDialog = true" to="/login">Login</vs-button>
       </template>
     </vs-navbar>
     <div class="container">
