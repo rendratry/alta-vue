@@ -5,16 +5,19 @@
       <p>Pilih produk yang kamu inginkan</p>
     </header>
     <div class="produk">
-      <ProductFurniture/>
+      <AllProductFurniture/>
+      <br>
+      <AppFooter/>
     </div>
   </div>
 </template>
 <script>
 
-import ProductFurniture from "@/components/Product.vue";
+import AllProductFurniture from "@/components/AllProduct.vue";
+import AppFooter from "@/components/Footer.vue";
 export default {
   name: 'ProductView',
-  components: {ProductFurniture},
+  components: {AppFooter, AllProductFurniture},
 }
 </script>
 

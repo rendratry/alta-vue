@@ -36,21 +36,21 @@ export default {
       testimonials: [
         {
           id: 1,
-          name: 'John Doe',
-          comment: 'Pelayanan sangat baik! Produk berkualitas tinggi.',
-          avatar: 'https://api.duniagames.co.id/api/content/upload/file/8143860661599124172.jpg'
+          name: 'Dika Kurniawan',
+          comment: 'Furnitur minimalis ini sangat elegan dan fungsional. Desainnya yang sederhana tetapi menarik memberikan sentuhan modern yang sempurna untuk ruang tamu saya. Saya sangat puas dengan kualitasnya.',
+          avatar: 'https://img.freepik.com/free-photo/handsome-bearded-guy-posing-against-white-wall_273609-20597.jpg?w=2000'
         },
         {
           id: 2,
-          name: 'Jane Smith',
-          comment: 'Saya sangat puas dengan pembelian saya. Terima kasih!',
-          avatar: 'https://api.duniagames.co.id/api/content/upload/file/8143860661599124172.jpg'
+          name: 'Asep Subarjo',
+          comment: 'Produk furnitur minimalis ini memenuhi semua ekspektasi saya. Bahan berkualitas tinggi dan perpaduan warna yang cocok dengan gaya dekorasi rumah saya. Harganya juga cukup terjangkau untuk kualitas yang diberikan.',
+          avatar: 'https://media.istockphoto.com/id/951334392/fr/photo/portrait-de-sourire-beau-m%C3%A2le-ouvrier-garde-main-sous-le-menton-porte-casual-t-shirt-blanc-et.jpg?s=170667a&w=0&k=20&c=o-WlvtUIY-U3MObubu9aQNpyUk0Ifsu_DByiKCn1jxE='
         },
         {
           id: 3,
-          name: 'Jane Smith',
-          comment: 'Saya sangat puas dengan pembelian saya. Terima kasih!',
-          avatar: 'https://api.duniagames.co.id/api/content/upload/file/8143860661599124172.jpg'
+          name: 'Ilham Sutikno',
+          comment: 'Furnitur minimalis ini memberikan kesan bersih dan lapang dalam ruangan saya. Desainnya yang ringkas membantu mengoptimalkan ruang, sementara tampilannya yang bersih membuatnya mudah untuk dipadukan dengan berbagai dekorasi. Sangat merekomendasikannya!',
+          avatar: 'https://t4.ftcdn.net/jpg/02/14/74/61/360_F_214746128_31JkeaP6rU0NzzzdFC4khGkmqc8noe6h.jpg'
         },
         // Tambahkan testimoni lainnya di sini
       ]
@@ -63,10 +63,6 @@ export default {
 /* Gaya CSS khusus untuk bagian testimoni jika diperlukan */
 .testimonials {
   padding: 40px 0;
-}
-
-.testimonials h2 {
-  text-align: center;
 }
 
 .testimonials vs-card {

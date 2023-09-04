@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Isi konten halaman Anda di sini -->
-
+  <hr>
     <!-- Footer -->
     <vs-footer>
       <div class="footer-content">
