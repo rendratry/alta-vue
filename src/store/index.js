@@ -23,7 +23,7 @@ export default new Vuex.Store({
         },
       };
       // Simpan logika pemanggilan API di sini
-      axios.get('http://api2.myfin.id:5500/rvfurniture/api/v1/getproduct', config)
+      axios.get('https://pemilih.online/rvfurniture/api/v1/getproduct', config)
           .then((response => {
             store.commit('setProducts', response.data.data);
           })
